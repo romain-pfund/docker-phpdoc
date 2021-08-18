@@ -1,8 +1,7 @@
 FROM php:7.2
 
 RUN apt-get update \
-    && apt-get install --yes -q wget gpg graphviz plantuml
-RUN ln -s  /usr/bin/plantuml /bin/plantuml
+    && apt-get install --yes -q wget gpg graphviz
 RUN cd /opt/ \
     && wget https://phar.io/releases/phive.phar \
     && wget https://phar.io/releases/phive.phar.asc
